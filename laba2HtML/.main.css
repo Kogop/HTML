@@ -1,10 +1,28 @@
+body{
+
+    margin: 0;
+}
+
+
 .block{
-background-image: url('Lighthouse.jpg');
+    margin: 0;
+    width: 1024px;
+    height: 758px;;
+background-image: url('file:///C:/Users/1/source/HTML/laba2HtML/Lighthouse.jpg');
 background-position: 0 0;
 background-repeat: no-repeat;
 background-size: auto auto;
+padding-top: 50px;
+}
 
+.block2{
 
-
+padding: 50px;
+height: 150px;
+width: 150px;
+margin: 0px auto;
+/* margin-top: 50px; */
+border-style: solid;
+border-color: aliceblue;
 
 }

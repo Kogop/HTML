@@ -1,0 +1,43 @@
+
+@keyframes anime {
+from{
+
+    width: 300px;
+    height: 300px;
+    color: white;
+    background-color: black;
+}
+50%{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color:darkgray;
+    background-color: gray;
+
+
+
+}
+to{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    color:black;
+    background-color: white;
+}
+}
+.rayon{
+
+    animation-name: anime;
+    animation-duration: 5s;
+    overflow: auto;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ 
+}
+.rayon:hover{
+
+    animation-play-state: paused;
+
+}

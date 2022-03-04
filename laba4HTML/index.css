@@ -21,7 +21,7 @@ main{
     display: flex;
     background-color: blanchedalmond;
     width: 75%;
-    height: fit-content;
+    
     flex-direction: column;
    
 }
@@ -36,21 +36,22 @@ main{
 
 .item{
 
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 300px;
     background-color: rgb(121, 4, 4);
     border-radius: 10px;
     border-color: aliceblue;
     border-style: dashed;
+    flex-shrink: 10;
    
 }
 .col__aside{
     display: flex;
     background-color: purple;
-    
+    width: 25%;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     
 
 }

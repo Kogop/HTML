@@ -9,6 +9,8 @@
     background-color: aqua;
 }
 
+p{text-align: center;}
+
 main{
     display:flex;
   
@@ -21,7 +23,7 @@ main{
     width: 75%;
     height: fit-content;
     flex-direction: column;
-
+   
 }
 
 .row{
@@ -32,10 +34,10 @@ main{
 
 }
 
-main.item{
+.item{
 
-    width: 100px;
-    height: 400px;
+    width: auto;
+    height: auto;
     background-color: rgb(121, 4, 4);
     border-radius: 10px;
     border-color: aliceblue;
@@ -44,12 +46,15 @@ main.item{
 }
 .col__aside{
     display: flex;
-    flex-wrap: nowrap;
+    background-color: purple;
+    
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
+    
 
 }
-.item{
+/* .item{
     width: 400px;
     height: 100px;
     background-color: rgb(6, 19, 133);
@@ -57,4 +62,4 @@ main.item{
     border-color: brown;
     border-style: dashed;
 
-}
+} */

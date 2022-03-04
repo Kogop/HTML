@@ -1,19 +1,23 @@
 .root{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .container{
     display:flex;
+    flex-direction: column;
     justify-content: space-evenly;
     background-color: aqua;
+  
 }
 
 p{text-align: center;}
 
 main{
     display:flex;
-  
+    flex: 1;
+   
 }
 
 .col__article{
@@ -31,7 +35,7 @@ main{
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-evenly;
-
+    
 }
 
 .item{
@@ -42,7 +46,8 @@ main{
     border-radius: 10px;
     border-color: aliceblue;
     border-style: dashed;
-    flex-shrink: 10;
+    flex-shrink: 2;
+    flex-basis: auto;
    
 }
 .col__aside{

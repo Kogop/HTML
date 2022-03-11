@@ -1,0 +1,44 @@
+.lds-circle{
+
+
+
+    animation-name: anime;
+    animation-duration: 5s;
+    overflow: auto;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: translatey(70px);
+
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+
+@keyframes anime {
+    from{
+    
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+       
+        background-color: red;
+    }
+    50%{
+    
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+
+    }
+    to{
+    
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: blue;
+
+    }
+    }

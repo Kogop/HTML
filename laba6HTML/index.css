@@ -1,44 +1,53 @@
 .lds-circle{
 
 
-
     animation-name: anime;
-    animation-duration: 5s;
+    animation-duration: 1s;
     overflow: auto;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transform: translatey(70px);
+  
 
 }
 
 body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: aquamarine;
+
+    transform: translateY(100px);
+
+
 }
 
 @keyframes anime {
     from{
-    
+
+ 
         width: 100px;
         height: 100px;
         border-radius: 100%;
-       
+
         background-color: red;
+
+        perspective-origin: 0px;
+
+
     }
     50%{
-    
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
+        background-color: red;
+        transform: rotateX(0.25turn);
 
     }
     to{
-    
-        width: 300px;
-        height: 300px;
+
+        width: 100px;
+        height: 100px;
         border-radius: 100%;
         background-color: blue;
+        transform: scale(2);
+
+        perspective: 500px;
 
     }
     }

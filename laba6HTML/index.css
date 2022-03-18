@@ -7,6 +7,26 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
   
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+
+}
+
+.lds-circle:nth-child(2){
+
+    animation-name: anime1;
+    animation-duration: 1s;
+    overflow: auto;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    background-color: red;
 
 }
 
@@ -23,31 +43,40 @@ body {
 @keyframes anime {
     from{
 
- 
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-
-        background-color: red;
-
-        perspective-origin: 0px;
-
-
     }
     50%{
     
-        transform: rotateX(0.25turn);
+        transform: rotateY(90deg);
 
     }
     to{
 
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
         background-color: blue;
+
+        transform: rotateY(180deg);
         transform: scale(2);
 
-        perspective: 500px;
 
     }
+}
+
+@keyframes anime1 {
+    from{
+        perspective-origin: 0px;
+        
+
     }
+    50%{
+
+        transform: rotateX(90deg);
+
+    }
+    to{
+
+        background-color: blue;
+        perspective: 500px;
+
+        transform: rotateX(180deg);
+        transform: scale(2);
+    }
+}

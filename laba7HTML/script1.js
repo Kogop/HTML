@@ -1,10 +1,11 @@
-
-let y = prompt('Год основания ПГУ', );
+let message
+let y = prompt("Год основания ПГУ", );
 
 if (y==1943) {
-    console.log("верно");
+   message = "Verno";
 
 }else{
 
-    console.log("neverno");
+   message = "neverno";
 }
+alert(message);

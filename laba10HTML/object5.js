@@ -2,7 +2,7 @@ let car = {
     make : "Ford",
     wheels : 4,
     doors : {
-        side : 2,
+        side : 3,
         back : 1
     }
 }
@@ -14,12 +14,14 @@ function deepCop(obj, obj2){
         if(typeof obj[key] === 'object'){
             obj2[key] = obj[key]
         }else{
-            deepCop(obj[key], obj2[key]);
+            let key2 = key
+
+            deepCop(key[key], obj2[key]);
         }
     }
 }
 deepCop(car, car2);
 
-alert(car2.doors[side]);
+alert(car2.doors.side);
 
 

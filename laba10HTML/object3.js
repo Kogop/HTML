@@ -3,8 +3,20 @@ let car = {
     doors : 5
 }
 let sum = 0
-for(let key in car){
+function Sum(obj){
+    for(let key in obj){
+        if(typeof obj[key] === "undefined"){
 
-sum += car[key]
+        }
+         else
+        {
+            sum += obj[key]
+        }
+    }
+
 }
+
+Sum(car);
+
+
 alert(sum);

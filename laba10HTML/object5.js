@@ -11,17 +11,15 @@ let car2 = {}
 
 function deepCop(obj, obj2){
     for(let key in obj){
-        if(typeof obj[key] === 'object'){
-            obj2[key] = obj[key]
+        if(typeof obj[key] == 'object'){
+            deepCop(key[key], obj2[key]); 
         }else{
-            let key2 = key
-
-            deepCop(key[key], obj2[key]);
+            obj2[key] = obj[key]
         }
     }
 }
 deepCop(car, car2);
 
-alert(car2.doors.side);
+alert(car2.doors == car.doors);
 
 

@@ -10,7 +10,7 @@ function BolsheFsehPovtor(item, i) {
             maxx = maxx + 1;
         }
     } 
-    if (temp[1] <= maxx) {
+    if (temp[1] < maxx) {
         temp[0] = item[i];
         temp[1] = maxx;
         used.push(item[i]);

@@ -1,0 +1,24 @@
+.text{
+
+    color:red;
+}
+
+#span1{
+
+color: blue;
+
+
+}
+#span2{
+    color: green;
+}
+
+span[title]{
+
+    color: orange;
+}
+
+.text_bold{
+
+    font-weight: bold;
+}

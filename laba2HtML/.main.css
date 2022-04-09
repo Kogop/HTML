@@ -1,0 +1,40 @@
+body{
+
+    margin: 0;
+}
+
+
+.block{
+    margin: 0;
+height: 100vh;
+background-image: url('file:///C:/Users/1/source/HTML/laba2HtML/Lighthouse.jpg');
+background-position: 0 0;
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 50px;
+}
+
+.block2{
+
+padding: 50px;
+height: 150px;
+width: 150px;
+margin: 0px auto;
+/* margin-top: 50px; */
+border-style: solid;
+border-color: aliceblue;
+
+}
+
+.block3{
+
+    padding: 50px;
+    height: 150px;
+    width: 150px;
+    margin: 0px auto;
+    /* margin-top: 50px; */
+    border-style: solid;
+    border-color: aqua;
+    background-color: aqua;
+    }
+    

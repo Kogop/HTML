@@ -1,27 +1,28 @@
-let arr = [1,1,1,2,2,3,1,2,3,1,3];
+let arr = [1,1,1,2,2,3,1,2,3,1,3,2,2,2];
 let maxx = 0;
-let used = []; 
+let used = [0,0,0,0,0]; 
 let temp = [0,0];
 let temp1 = [];
 
 function BolsheFsehPovtor(item, i) {
-    let arr2 = arr;
+    let arr2 = item;
+    maxx = 0;
         arr2.forEach(function(pop, ind, arr2){
-            if(arr2.includes(item[i])){
-                arr2.splice(1, ind);
-               // maxx = maxx + 1;
+            if(arr2[ind] == item[i]){
+                arr2.slice(ind);
+                maxx = maxx + 1;
             }
-        }
-    if(temp[1] < maxx){
+        });
+    if(temp[1] <= maxx){
         temp[0] = item[i];
-        temp[1] = arr.length - arr2.length;
+        temp[1] = maxx;
         used.push(item[i]);
     }  
 }
 
 for (let index = 0; index < arr.length; index++) { 
    for (let J = 0; J < used.length; J++) {
-        if (arr[index] === used[J]) {
+        if (used[J] == arr[index]) {
         }else{
             BolsheFsehPovtor(arr, index);
             maxx = 0;

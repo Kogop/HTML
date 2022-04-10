@@ -5,17 +5,18 @@ let temp = [0,0];
 let temp1 = [];
 
 function BolsheFsehPovtor(item, i) {
-    for (let ind = 0; ind < item.length; ind++) { 
-        if(item.includes(item[i])){
-            maxx = maxx + 1;
+    let arr2 = arr;
+        arr2.forEach(function(pop, ind, arr2){
+            if(arr2.includes(item[i])){
+                arr2.splice(1, ind);
+               // maxx = maxx + 1;
+            }
         }
-    } 
-    if (temp[1] < maxx) {
+    if(temp[1] < maxx){
         temp[0] = item[i];
-        temp[1] = maxx;
+        temp[1] = arr.length - arr2.length;
         used.push(item[i]);
-    }
-       
+    }  
 }
 
 for (let index = 0; index < arr.length; index++) { 

@@ -30,6 +30,7 @@ for (let index = 0; index < arr.length; index++) {
     }
 }
 
-alert(temp[0]);
-alert(temp[1]);
+//alert(temp[0]);
+//alert(temp[1]);
+alert("Элемент : " + temp[0] + "  встречается " + temp[1] + " раз");
 

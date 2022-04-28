@@ -5,26 +5,28 @@ let sum_of_smol_char = 0;
 let sum_Upper_char = 0;
 
 
-function ChangeSizeOfCharInString() {
-    strA = str0;
-    strA.toUpperCase();
-       for ( ind of str0){
-            if (str0[ind] > strA[ind]) {
+function ChangeSizeOfCharInString(string) {
+    strA = string;    
+    stra = strA.toUpperCase();
+   // alert(stra);
+       for (ind = 0; ind < string.length; ind++){
+            if (string[ind] > stra[ind]) {
                 sum_of_smol_char = sum_of_smol_char + 1;
             }else{
                 sum_Upper_char = sum_Upper_char + 1;
             }
         };
-    if (sum_of_smol_char > sum_Upper_char) {
-        str0.toLowerCase();
+        //alert(sum_Upper_char);
+    if (sum_of_smol_char > sum_Upper_char) {  
+        string = string.toUpperCase();
     }
     else{
-        str0.toUpperCase();
+        string = string.toLowerCase();
     }
-  
+  return string;
 }
 
 
-ChangeSizeOfCharInString();
 
- alert(str0);
+
+ alert(ChangeSizeOfCharInString(str0));

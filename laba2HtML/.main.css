@@ -7,7 +7,7 @@ body{
 .block{
     margin: 0;
 height: 100vh;
-background-image: url('file:///C:/Users/1/source/HTML/laba2HtML/Lighthouse.jpg');
+background-image: url('./Lighthouse.jpg');
 background-position: 0 0;
 background-repeat: no-repeat;
 background-size: cover;

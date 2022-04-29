@@ -1,4 +1,4 @@
-let str0 = "OppaoapaoSSSSA";
+let str0 = "OppaoapaoSSSSAAAAAAAAAAAAAAAAAAAAA";
 let str1 = "a" ;
 let str2 = "a";
 let sum_of_smol_char = 0;

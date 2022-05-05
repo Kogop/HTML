@@ -26,7 +26,8 @@ function IsSudokuTrue(sudoku) {
             //alert(arr[i][j]);  
         }
         if(arr_1.every(elem =>elem == 1) == arr.every(elem =>elem == 1)){
-
+                // hren napisal every i tak vozvrashaet true tak 4to proveriat mojno
+                // i nado tolko sam arr
             
         }else{
             return false;

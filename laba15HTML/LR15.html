@@ -8,28 +8,35 @@
     <title>ЛР 15</title>
 </head>
 <body>
-   
-    
-<button>Показать форму</button>
-<div class="popup">
-  <div class="popup__container">
-    <div class="popup__wrapper">
-      <div id="blablabla">
-        <form role="form" action="/requestFine" autocomplete="off" method="POST">
-          <label>Name:</label>
-          <input type="text" name="nameReq">
-          <label>Pogonyalo:</label>
-          <input type="text" name="lastNameReq">
-          <label>Cshiferki:</label>
-          <input type="text" name="telReq">
-          <label>hto ti:</label>
-          <input type="text" name="textReq">
-          <button type="submit" class="btn btn-success">Отправить</button>
+    <div class="popup__bg"> 
+        <form class="popup">
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">Ваше имя</div>
+            </label>
+            <label>
+                <input type="tel" name="tel">
+                <div class="label__text">Ваш телефон</div>
+            </label>
+            <label>
+                <textarea name="message"></textarea>
+                <div class="label__text">Почта</div>
+            </label>
+            <button type="submit">Отправить</button>
         </form>
-      </div>
+    </div> 
+    <div class = "perv_knopka">
+       
+
+        <label>
+            <textarea name="message"></textarea>
+            <div class="label__text">Почта</div>
+        </label>
+        <a href="#" class="open-popup">Начать регистрацию</a>
+
     </div>
-  </div>
-</div>
+   
 <script src = "chast1.js"></script>
+
 </body>
 </html>

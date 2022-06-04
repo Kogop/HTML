@@ -73,10 +73,11 @@ function newElement() {
 // Create a copy of checked list item when clicking on the "Copy" button
 function newElement1() {
     var li = document.createElement("li");
-    var inputValue = document.getElementsByClassName("checked").value;
-    var t = document.createTextNode(inputValue);
+    var textValue = document.getElementsByClassName("checked")[0].outerHTML;   //problema TUT. kak tolko I uznau kak poluchat imeno soderjimoe, to vse zarabotaet
+    console.log(textValue);
+    var t = document.createTextNode(textValue);
     li.appendChild(t);
-    if (inputValue === '') {
+    if (textValue === '') {
       alert("You must write something!");
     } else {
       document.getElementById("myUL").appendChild(li);

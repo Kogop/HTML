@@ -28,7 +28,8 @@ const todo = {
         <span class="todo__task">${text}</span>
         <span class="todo__action todo__action_restore" data-todo-action="active"></span>
         <span class="todo__action todo__action_complete" data-todo-action="completed"></span>
-        <span class="todo__action todo__action_delete" data-todo-action="deleted"></span></li>`;
+        <span class="todo__action todo__action_delete" data-todo-action="deleted"></span>
+        <span class="todo__action todo__action_copy" data-todo-action="copy"></span></li>`;
     },
     init() {
       const fromStorage = localStorage.getItem('todo');

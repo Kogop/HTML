@@ -18,8 +18,8 @@ for (i = 0; i < myNodelist1.length; i++) {
   span1.className = "copy";
   span1.appendChild(txt1);
   myNodelist1[i].appendChild(span1);
-}*/
-
+}
+*/
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
@@ -56,7 +56,8 @@ function newElement() {
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
-/* knopki copy na cajdoy plawke
+  /*
+ //knopki copy na cajdoy plawke
   var span1 = document.createElement("SPAN");
   var txt1 = document.createTextNode("\u00D7");
   span1.className = "copy";
@@ -73,7 +74,7 @@ function newElement() {
 // Create a copy of checked list item when clicking on the "Copy" button
 function newElement1() {
     var li = document.createElement("li");
-    var textValue = document.getElementsByClassName("checked")[0].outerHTML;   //problema TUT. kak tolko I uznau kak poluchat imeno soderjimoe, to vse zarabotaet
+    var textValue = document.getElementsByClassName("checked")[0].textContent;   //problema TUT. kak tolko I uznau kak poluchat imeno soderjimoe, to vse zarabotaet
     console.log(textValue);
     var t = document.createTextNode(textValue);
     li.appendChild(t);
@@ -89,13 +90,14 @@ function newElement1() {
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-  /*   knopki copy na cajdoy plawke
+/*
+  // knopki copy na cajdoy plawke
     var span1 = document.createElement("SPAN");
     var txt1 = document.createTextNode("\u00D7");
     span1.className = "copy";
     span1.appendChild(txt1);
     li.appendChild(span1);
-  */
+*/
     for (i = 0; i < close.length; i++) {
       close[i].onclick = function() {
         var div = this.parentElement;
